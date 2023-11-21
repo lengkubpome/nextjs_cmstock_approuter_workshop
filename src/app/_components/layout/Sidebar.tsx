@@ -17,12 +17,6 @@ import MailIcon from '@mui/icons-material/Mail';
 
 const drawerWidth = 240;
 
-
-interface AppBarProps extends MuiAppBarProps {
-    open?: boolean;
-}
-
-
 const DrawerHeader = styled('div')(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
@@ -39,7 +33,6 @@ type Props = {
 
 export default function Sidebar({ open, handleDrawerClose }: Props) {
     const theme = useTheme();
-
 
     return (
 
